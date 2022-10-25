@@ -14,16 +14,18 @@
         <form>
             <div>
                 <label for="name">Nome do Aluno</label>
-                <input type="text" name="name" id="InputName">
+                <input type="text" name="name" id="inputName" onchange="nameValidation()">
+                <span id="spanName"></span>
             </div>
 
-            <div>
-                <input type="radio" id="Masculino" name="genero" value="Masculino">
+            <div onchange="genderValidation()">
+                <input type="radio" id="Masculino" name="genre" value="Masculino">
                 <label for="Masculino">Masculino</label>
-                <input type="radio" id="Feminino" name="genero" value="Feminino">
+                <input type="radio" id="Feminino" name="genre" value="Feminino">
                 <label for="Feminino">Feminino</label>
-                <input type="radio" id="Outro" name="genero" value="Outro">
-                <label for="Outro">Outro</label>
+                <input type="radio" id="Outro" name="genre" value="Outro">
+                <label for="Outro">Outro</label><br>
+                <span id="spanGenre"></span>
             </div>
 
             <h3>Documentos enviados para a secretaria</h3>
