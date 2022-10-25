@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro Fapesp</h1>
+    </header>
+    <section>
+        <form>
+            <div>
+                <label for="name">Nome do Aluno</label>
+                <input type="text" name="name" id="InputName">
+            </div>
+
+            <div>
+                <input type="radio" id="Masculino" name="genero" value="Masculino">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" id="Feminino" name="genero" value="Feminino">
+                <label for="Feminino">Feminino</label>
+                <input type="radio" id="Outro" name="genero" value="Outro">
+                <label for="Outro">Outro</label>
+            </div>
+
+            <h3>Documentos enviados para a secretaria</h3>
+            <div>
+                <input type="checkbox" id="endereco" value="Endereço" name="docs">
+                <label for="endereco">Endereço</label>
+                <input type="checkbox" id="RG" value="RG" name="docs">
+                <label for="RG">RG</label>
+                <input type="checkbox" id="CPF" value="CPF" name="docs">
+                <label for="CPF">CPF</label>
+                <input type="checkbox" id="historico" value="historico" name="docs">
+                <label for="historico">Historico Escolar</label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+</body>
+</html>
