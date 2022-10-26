@@ -27,7 +27,7 @@
 - radio button
 - checkbox
 - Botão de submit
-- Botão de Retorno 1
+- Botão de Retorno
  
 
 <!-- ## 📁 Acesso ao projeto
