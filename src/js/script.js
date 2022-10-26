@@ -24,7 +24,7 @@ function nameValidation(){
        span.innerHTML = 'Preencha o campo';
        return false
     }
-    if(inputName.value.length > 4){
+    if(inputName.value.length > 3){
         span.innerHTML = '';
         return true
     }else{
