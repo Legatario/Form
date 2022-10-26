@@ -1,0 +1,28 @@
+header{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+section{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.loader{
+    width: 200px;
+    height: 200px;
+    /* border-left: 3px solid rgb(76, 230, 84); */
+    border-top: 3px solid rgb(76, 230, 84);
+    border-radius: 50%;
+    animation: rotete 1s infinite;
+}
+
+@keyframes rotete{
+    to{
+        transform: rotate(360deg);
+    }
+}
