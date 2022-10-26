@@ -15,7 +15,7 @@
 <img src="https://img.shields.io/github/stars/legatario?style=social" />
 </p>
 
-<p> Projeto desenvolvido para o exercicio da Ebac, uma tela de cadastro exibiNDO um "fake loading” </p>
+<p> Projeto desenvolvido para o exercicio da Ebac, uma tela de cadastro exibindo um "fake loading” </p>
 
 
 
