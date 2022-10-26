@@ -37,7 +37,7 @@
                 <label for="RG">RG</label>
                 <input type="checkbox" id="CPF" value="CPF" name="docs">
                 <label for="CPF">CPF</label>
-                <input type="checkbox" id="historico" value="historico" name="docs">
+                <input type="checkbox" id="historico" value="Historico Escolar" name="docs">
                 <label for="historico">Historico Escolar</label>
             </div>
 
@@ -45,9 +45,16 @@
         </form>
     </section>
 
-    <section>
+    <section id="loader">
         <div class="loader"></div>
     </section>
+
+    <article id="table">
+        <div class="info"><p>Aluno: </p><span id="student"></span></div>
+        <div class="info"><p>Genero: </p><span id="studentGender"></span></div>
+        <div class="info_docs"><h3>Documentos Recebidos</h3><ul id="list"></ul></div>
+        <button>Voltar</button>
+    </article>
 
     <script src="src/js/script.js"></script>
 </body>

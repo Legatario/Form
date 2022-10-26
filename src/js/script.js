@@ -4,18 +4,23 @@ const radio = document.getElementsByName('genre');
 const span = document.querySelector('#spanName');
 const spanGender = document.querySelector('#spanGenre');
 const docs = document.getElementsByName('docs');
+const loader = document.getElementById('loader');
+const table = document.getElementById('table');
 
+let declarationGender = '';
+let docsSing = [];
 
-console.log(docs)
+// console.log(loader)
+
+loader.style.display = 'none';
+// table.style.display='none';
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
-    const val = nameValidation()
-    if(val == true){
-        console.log(inputName.value)
-    }
+    nameValidation()
     genderValidation()
     checkValidation()
+    textfunction()
 })
 
 function nameValidation(){
@@ -48,7 +53,7 @@ function genderValidation(){
         return false;
     }else{
         spanGender.innerHTML = '';
-        console.log(gender)
+        declarationGender = gender
         return true;
     } 
 }
@@ -60,5 +65,21 @@ function checkValidation(){
         return doc.checked == true
     })
     .map((doc) => doc.value);
-    console.log(docCheck)
+    docsSing = docCheck;
+}
+
+function textfunction(){
+    const nameStudant = document.querySelector('#student')
+    nameStudant.innerHTML = inputName.value
+
+    const genderStudant = document.querySelector('#studentGender')
+    genderStudant.innerHTML = declarationGender
+
+    const list = document.getElementById('list')
+
+    docsSing.forEach((doc)=>{
+        var novoItem=document.createElement("li");
+        novoItem.textContent= doc;
+        list.appendChild(novoItem);
+    })
 }

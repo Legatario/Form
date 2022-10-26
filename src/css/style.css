@@ -10,6 +10,7 @@ section{
     display: flex;
     justify-content: center;
     padding-bottom: 3rem;
+    flex-direction: column;
 }
 
 .loader{
@@ -25,4 +26,18 @@ section{
     to{
         transform: rotate(360deg);
     }
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.info p{
+    padding-right: 5px;
+}
+
+.info_docs{
+    display: flex;
+    flex-direction: column;
 }
