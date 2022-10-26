@@ -12,36 +12,51 @@
         <h1>Cadastro Fapesp</h1>
     </header>
     <section>
-        <form>
-            <div>
+        <form class="container">
+            <div class="coll">
                 <label for="name">Nome do Aluno</label>
-                <input type="text" name="name" id="inputName" onchange="nameValidation()">
-                <span id="spanName"></span>
+                <input type="text" name="name" id="inputName" onchange="nameValidation()"><br>
+                <span id="spanName" class="error"></span>
             </div>
 
-            <div onchange="genderValidation()">
-                <input type="radio" id="Masculino" name="genre" value="Masculino">
-                <label for="Masculino">Masculino</label>
-                <input type="radio" id="Feminino" name="genre" value="Feminino">
-                <label for="Feminino">Feminino</label>
-                <input type="radio" id="Outro" name="genre" value="Outro">
-                <label for="Outro">Outro</label><br>
-                <span id="spanGenre"></span>
+            <div onchange="genderValidation()" class="coll">
+                <div class="row">
+                    <input type="radio" id="Masculino" name="genre" value="Masculino">
+                    <label for="Masculino">Masculino</label>
+                </div>
+                <div class="row">
+                    <input type="radio" id="Feminino" name="genre" value="Feminino">
+                    <label for="Feminino">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" id="Outro" name="genre" value="Outro">
+                    <label for="Outro">Outro</label>
+                </div class="row">
+                <br>
+                <span id="spanGenre" class="error"></span>
             </div>
 
             <h3>Documentos enviados para a secretaria</h3>
-            <div>
-                <input type="checkbox" id="endereco" value="Endereço" name="docs">
-                <label for="endereco">Endereço</label>
-                <input type="checkbox" id="RG" value="RG" name="docs">
-                <label for="RG">RG</label>
-                <input type="checkbox" id="CPF" value="CPF" name="docs">
-                <label for="CPF">CPF</label>
-                <input type="checkbox" id="historico" value="Historico Escolar" name="docs">
-                <label for="historico">Historico Escolar</label>
+            <div class="coll">
+                <div class="row">
+                    <input type="checkbox" id="endereco" value="Endereço" name="docs">
+                    <label for="endereco">Endereço</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="RG" value="RG" name="docs">
+                    <label for="RG">RG</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="CPF" value="CPF" name="docs">
+                    <label for="CPF">CPF</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="historico" value="Historico Escolar" name="docs">
+                    <label for="historico">Historico Escolar</label>
+                </div>
             </div>
 
-            <button type="submit">Cadastrar</button>
+            <button type="submit" class="button">Cadastrar</button>
         </form>
     </section>
 
@@ -50,10 +65,12 @@
     </section>
 
     <article id="table">
-        <div class="info"><p>Aluno: </p><span id="student"></span></div>
-        <div class="info"><p>Genero: </p><span id="studentGender"></span></div>
-        <div class="info_docs"><h3>Documentos Recebidos</h3><ul id="list"></ul></div>
-        <button>Voltar</button>
+        <div class="container">
+            <div class="info coll"><p>Aluno: </p><span id="student"></span></div>
+            <div class="info coll"><p>Genero: </p><span id="studentGender"></span></div>
+            <div class="info_docs coll"><h4>Documentos Recebidos</h4><ul id="list"></ul></div>
+            <button id="back" class="button">Voltar</button>
+        </div>
     </article>
 
     <script src="src/js/script.js"></script>

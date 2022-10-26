@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(230, 227, 227);
+}
 header{
     align-items: center;
     display: flex;
@@ -11,6 +20,12 @@ section{
     justify-content: center;
     padding-bottom: 3rem;
     flex-direction: column;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .loader{
@@ -40,4 +55,69 @@ section{
 .info_docs{
     display: flex;
     flex-direction: column;
+    align-content: flex-start
+}
+.info_docs ul{
+    padding: 0.8em;
+}
+.info_docs li{
+    margin-bottom: .5em;
+}
+
+.coll{
+    padding: .8em;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row{
+    margin-right: .5em;
+}
+
+h3{
+    padding: .8em;
+}
+
+h4{
+    padding-bottom: .8em;
+    font-size: 20px;
+}
+
+.container{
+    border: 2px solid #fff;
+    width: 500px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 500px){
+    .container{
+        width: 97%;
+    }
+}
+
+.error{
+    font-size: 80%;
+    color: red;
+}
+
+button{
+    padding: .5em;
+    margin: .8em;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    background: rgb(83, 151, 214);
+}
+
+button:hover{
+    border-color: #000;
+    color: #000;
 }
