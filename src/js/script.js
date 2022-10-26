@@ -2,10 +2,11 @@ const form = document.querySelector('form');
 const inputName = document.querySelector('#inputName');
 const radio = document.getElementsByName('genre');
 const span = document.querySelector('#spanName');
-const spanGender = document.querySelector('#spanGenre')
+const spanGender = document.querySelector('#spanGenre');
+const docs = document.getElementsByName('docs');
 
 
-console.log(radio)
+console.log(docs)
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
@@ -14,6 +15,7 @@ form.addEventListener('submit', function(e){
         console.log(inputName.value)
     }
     genderValidation()
+    checkValidation()
 })
 
 function nameValidation(){
@@ -52,3 +54,11 @@ function genderValidation(){
 }
 
 
+function checkValidation(){
+    const array = Array.from(docs).map((elem)=>elem)
+    const docCheck = array.filter((doc) =>{
+        return doc.checked == true
+    })
+    .map((doc) => doc.value);
+    console.log(docCheck)
+}
