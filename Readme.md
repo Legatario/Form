@@ -29,11 +29,6 @@
 - Botão de submit
 - Botão de Retorno
  
-
-<!-- ## 📁 Acesso ao projeto
-
-<a href="https://legatario.github.io/Codesh/">Health Translation Page</a> -->
-
 ## Tecnologias utilizadas
 
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <br>

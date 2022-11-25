@@ -5,6 +5,7 @@ const span = document.querySelector('#spanName');
 const spanGender = document.querySelector('#spanGenre');
 const docs = document.getElementsByName('docs');
 const loader = document.getElementById('loader');
+const containerForm = document.getElementById('containerForm');
 const table = document.getElementById('table');
 const list = document.getElementById('list');
 const back = document.getElementById('back');
@@ -31,7 +32,7 @@ back.addEventListener('click', function(){
     form.reset();
     list.innerHTML = ''
 
-    form.style.display = 'flex'
+    containerForm.style.display = 'flex'
     loader.style.display = 'none';
     table.style.display='none';
 })
@@ -124,7 +125,7 @@ function callAsync(a,b){
 }
 
 function timeLoader(){
-    form.style.display = 'none'
+    containerForm.style.display = 'none'
     loader.style.display = 'flex';
     table.style.display='none';
 

@@ -6,8 +6,10 @@
 
 body{
     background: rgb(230, 227, 227);
+    
 }
 header{
+    text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -20,12 +22,16 @@ section{
     justify-content: center;
     padding-bottom: 3rem;
     flex-direction: column;
+    height: 700px;
+    margin: auto;
+    
 }
 
 article{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .loader{
@@ -71,6 +77,10 @@ article{
     flex-wrap: wrap;
 }
 
+.labelname{
+    margin-right: .5em;
+}
+
 .row{
     margin-right: .5em;
 }
@@ -82,6 +92,10 @@ h3{
 h4{
     padding-bottom: .8em;
     font-size: 20px;
+}
+span{
+    width: 60%;
+    margin-top: .3em;
 }
 
 .container{
@@ -98,9 +112,16 @@ h4{
 
 @media(max-width: 500px){
     .container{
-        width: 97%;
+        width: 95%;
     }
 }
+
+@media(max-width: 300px){
+   #inputName{
+    width: 95%;
+}
+}
+
 
 .error{
     font-size: 80%;

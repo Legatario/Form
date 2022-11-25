@@ -11,11 +11,11 @@
     <header>
         <h1>Cadastro Fapesp</h1>
     </header>
-    <section>
+    <section id="containerForm">
         <form class="container">
             <div class="coll">
-                <label for="name">Nome do Aluno</label>
-                <input type="text" name="name" id="inputName" onchange="nameValidation()"><br>
+                <label for="name" class="labelname">Nome do Aluno</label>
+                <input type="text" name="name" id="inputName" onchange="nameValidation()">
                 <span id="spanName" class="error"></span>
             </div>
 
@@ -32,7 +32,6 @@
                     <input type="radio" id="Outro" name="genre" value="Outro">
                     <label for="Outro">Outro</label>
                 </div class="row">
-                <br>
                 <span id="spanGenre" class="error"></span>
             </div>
 
@@ -64,14 +63,14 @@
         <div class="loader"></div>
     </section>
 
-    <article id="table">
+    <section id="table">
         <div class="container">
             <div class="info coll"><p>Aluno: </p><span id="student"></span></div>
             <div class="info coll"><p>Genero: </p><span id="studentGender"></span></div>
             <div class="info_docs coll"><h4>Documentos Recebidos</h4><ul id="list"></ul></div>
             <button id="back" class="button">Voltar</button>
         </div>
-    </article>
+    </section>
 
     <script src="src/js/script.js"></script>
 </body>
